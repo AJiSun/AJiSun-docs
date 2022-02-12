@@ -1,0 +1,21 @@
+{
+  "name": "AJiSun-docs",
+  "version": "1.0.0",
+  "description": "纪先生笔记：时刻雕刻你的身体&&灵魂[持续学习]",
+  "main": "index.js",
+  "author": "ajisun",
+  "license": "MIT",
+  "devDependencies": {
+    "@vssue/api-github-v3": "^1.4.7",
+    "@vssue/vuepress-plugin-vssue": "^1.4.8",
+    "vuepress": "^1.9.7",
+    "vuepress-plugin-comment": "^0.7.3",
+    "vuepress-plugin-container": "^2.1.5",
+    "vuepress-plugin-copyright": "^1.0.2",
+    "vuepress-theme-vdoing": "^1.9.4"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  }
+}

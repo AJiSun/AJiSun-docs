@@ -1,0 +1,36 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add -D vuepress
+
+PATH: 
+  /Users/ajisun/.rvm/gems/ruby-2.4.6/bin:/Users/ajisun/.rvm/gems/ruby-2.4.6@global/bin:/Users/ajisun/.rvm/rubies/ruby-2.4.6/bin:/Users/ajisun/developSoftware/apache-tomcat-8.0.32/bin:/Users/ajisun/developSoftware/apache-maven-3.5.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/ajisun/.rvm/bin:/usr/local/mysql/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.16.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/global/-/global-4.4.0.tgz: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/lib/node_modules/yarn/lib/cli.js:141322:19)
+      at listOnTimeout (internal/timers.js:554:17)
+      at processTimers (internal/timers.js:497:7)
+
+npm manifest: 
+  {
+    "name": "AJiSun-docs",
+    "version": "1.0.0",
+    "description": "纪先生笔记：时刻雕刻你的身体&&灵魂[持续学习]",
+    "main": "index.js",
+    "author": "ajisun",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
