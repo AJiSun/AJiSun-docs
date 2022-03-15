@@ -1,9 +1,17 @@
+const autometa_options = {
+  site: {
+    name: '纪先生进阶指南',
+    twitter: 'AJiSun',
+  },
+  canonical_base: 'https://www.ajisun.fun',
+};
+
 module.exports = {
   theme: 'vdoing',
   title: '纪先生',
   description: '以系列的方式分享Java技术，让知识更成体系；还有成长的思考和人生杂谈；日拱一卒无有尽，功不唐捐终入海！',
   head: [
-        // ['meta', { name: 'keywords', content: 'Java'}],
+        ['meta', { name: 'keywords', content: 'Java,MySQL系列,redis,问题与设计,开发问题,纪先生,虚拟机系列,网站建设'}],
         ['link', { rel: 'icon', href: 'ajisun-logo-circular.png' }],
         // 添加百度站长的自动推送代码
         [ 'script', { src: '/assets/js/autopush-baidu.js' } ],
@@ -35,7 +43,12 @@ module.exports = {
             ]
       },
         {text: "MySQL相关", link: "/MySQL/"},
-        { text: "问题与设计系列", link: "/design/pt-change/"},
+        { text: "问题与设计系列",
+              items:[
+                  {text:"问题设计系列",link:"/design/pt-change/"},
+                  {text:"开发问题集合",link:"/question/parameters/"},
+                ]
+        },
         { text: "网站搭建", link: "/website/"},
         { text: "休息一下", link: "/games/"},
         // { text: "其他", link: "/other/pt-change/"},
@@ -126,6 +139,37 @@ module.exports = {
         }
       }
     ],
+    // 配置插件vuepress-plugin-thirdparty-search, 默认主题的搜索框集成第三方搜索引擎
+    [
+      "thirdparty-search",
+      {
+        thirdparty: [
+          // 可选，默认 []
+          {
+            title: "在谷歌中搜索",
+            frontUrl: "https://www.google.com.hk/search?q="
+          },
+          {
+            title: "在百度中搜索", // 在搜索结果显示的文字
+            frontUrl: "https://www.baidu.com/s?wd=", // 搜索链接的前面部分
+            behindUrl: "" // 搜索链接的后面部分，可选，默认 ''
+          },
+          {
+            title: "在360中搜索",
+            frontUrl: "https://www.so.com/s?q="
+          }
+        ]
+      }
+    ],
+    ['autometa', autometa_options],
+    ['sitemap', {
+        hostname: "https://www.ajisun.fun",
+        // 排除无实际内容的页面
+        exclude: ["/404.html"]
+        }
+     ],
+     ['vuepress-plugin-baidu-autopush']
+
 
   ]
 

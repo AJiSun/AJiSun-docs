@@ -12,7 +12,7 @@
     "vuepress-plugin-comment": "^0.7.3",
     "vuepress-plugin-container": "^2.1.5",
     "vuepress-plugin-copyright": "^1.0.2",
-    "vuepress-theme-vdoing": "^1.9.4"
+    "vuepress-theme-vdoing": "^1.9.5"
   },
   "scripts": {
     "dev": "vuepress dev docs",
